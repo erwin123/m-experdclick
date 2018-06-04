@@ -1,0 +1,33 @@
+<clr-main-container>
+    <clr-header class="header-4">
+        <div class="branding">
+            <a href="..." class="nav-link">
+                <clr-icon shape="vm-bug"></clr-icon>
+                <span class="title">Experd Click</span>
+            </a>
+        </div>
+        <div class="header-actions">
+            <a href="javascript://" class="nav-link nav-icon">
+                <clr-icon shape="user"></clr-icon>
+            </a>
+        </div>
+    </clr-header>
+    <nav class="header-nav" [clr-nav-level]="1">
+        
+                <clr-tree-node>
+                    Michael Scott 
+                    <ng-template [clrIfExpanded]="true">
+                        <clr-tree-node>Dwight K. Schrute</clr-tree-node>
+                        <clr-tree-node>
+                            Darryl Philbin
+                        </clr-tree-node>
+                    </ng-template>
+                </clr-tree-node>
+    </nav>
+    
+    <div class="content-container">
+        <main class="content-area">
+            
+        </main>
+    </div>
+</clr-main-container>
