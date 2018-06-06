@@ -1,0 +1,20 @@
+<div class="summary-container">
+  <div class="row flex-items-xs-center flex-items-xs-middle">
+    <div class="col-xs-11">
+      <div class="card">
+        <div class="card-header">
+          Profile Summary
+        </div>
+        <div class="card-block">
+          <div class="row">
+            <div class="col-xs">
+                <ngx-charts-pie-chart [view]="view" [scheme]="colorScheme" [results]="single" [legend]="showLegend" [explodeSlices]="explodeSlices"
+                [labels]="showLabels" [doughnut]="doughnut" [gradient]="gradient" (select)="onSelect($event)">
+              </ngx-charts-pie-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

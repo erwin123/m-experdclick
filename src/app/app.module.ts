@@ -19,6 +19,11 @@ import { FooterComponent } from './footer/footer.component';
 import { MeaningclickComponent } from './meaningclick/meaningclick.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AnchorComponent } from './anchor/anchor.component';
+import { DailyBoardComponent } from './daily-board/daily-board.component';
+import { HistoryComponent } from './history/history.component';
+import { SummaryComponent } from './summary/summary.component';
+import { FormsModule } from '@angular/forms';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,10 @@ import { AnchorComponent } from './anchor/anchor.component';
     DrawerComponent,
     FooterComponent,
     MeaningclickComponent,
-    AnchorComponent
+    AnchorComponent,
+    DailyBoardComponent,
+    HistoryComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,9 @@ import { AnchorComponent } from './anchor/anchor.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     NguCarouselModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    FormsModule,
+    NgxChartsModule
   ],
   providers: [AuthguardService],
   bootstrap: [AppComponent]

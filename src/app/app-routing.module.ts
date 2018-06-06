@@ -5,6 +5,9 @@ import { MainComponent } from './main/main.component';
 import { AuthguardService } from './services/authguard.service';
 import { LandingComponent } from './landing/landing.component';
 import { AnchorComponent } from './anchor/anchor.component';
+import { DailyBoardComponent } from './daily-board/daily-board.component';
+import { HistoryComponent } from './history/history.component';
+import { SummaryComponent } from './summary/summary.component';
 
 const appRoutes: Routes = [
   
@@ -13,6 +16,9 @@ const appRoutes: Routes = [
       { path: 'landing', component: LandingComponent},
       { path: 'login', component: LoginComponent },
       { path: 'anchor', component: AnchorComponent },
+      { path: 'daily', component: DailyBoardComponent, canActivate: [AuthguardService] },
+      { path: 'history', component: HistoryComponent, canActivate: [AuthguardService] },
+      { path: 'summary', component: SummaryComponent, canActivate: [AuthguardService] }
   ]},
   // { path: '', component: MainComponent, canActivate: [AuthguardService]},
 

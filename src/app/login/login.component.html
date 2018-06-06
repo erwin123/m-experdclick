@@ -1,5 +1,5 @@
 <div class="login-container">
-    <form class="login">
+    <form class="login" (ngSubmit)="login()">
         <h1 class="welcome">Login</h1>
             Experd Click
         <div class="login-group">
@@ -8,7 +8,7 @@
             <div *ngIf="hasError" class="error active">
                 Invalid user name or password
             </div>
-            <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
+            <button type="button" (click)="login()" class="btn btn-primary btn-block">LOGIN</button>
             <a href="javascript://" class="signup">Register</a>
         </div>
     </form>

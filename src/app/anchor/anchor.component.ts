@@ -12,7 +12,7 @@ export class AnchorComponent implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigate(['/main/landing']);
+      this.router.navigate(['main/landing']);
     }, 500);
   }
 
