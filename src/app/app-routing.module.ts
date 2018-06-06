@@ -20,7 +20,7 @@ const appRoutes: Routes = [
       { path: 'history', component: HistoryComponent, canActivate: [AuthguardService] },
       { path: 'summary', component: SummaryComponent, canActivate: [AuthguardService] }
   ]},
-  // { path: '', component: MainComponent, canActivate: [AuthguardService]},
+  //{ path: '', redirectTo: 'main/landing'},
 
   // otherwise redirect to home
   { path: '**', redirectTo: 'main/landing' }

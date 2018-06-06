@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common'
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -52,7 +52,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     FormsModule,
     NgxChartsModule
   ],
-  providers: [AuthguardService],
+  providers: [AuthguardService, {provide: LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
