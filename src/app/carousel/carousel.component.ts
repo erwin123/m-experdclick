@@ -54,6 +54,6 @@ export class CarouselComponent implements OnInit {
 
   /* It will be triggered on every slide*/
   onmoveFn(data: NguCarouselStore) {
-    console.log(data);
+    
   }
 }
